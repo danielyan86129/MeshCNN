@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 ## run the training
-python train.py \
+python_bin=$1
+$python_bin train.py \
 --dataroot datasets/shrec_16 \
 --name shrec16 \
 --ncf 64 128 256 256 \
